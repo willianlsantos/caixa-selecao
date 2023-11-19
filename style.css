@@ -5,61 +5,76 @@
     font-family: 'Nunito', sans-serif;
 }
 
+
 H1 {
     font-weight: 700;
     text-align: center;
-    margin-top: 30px;
+
 }
 
 img {
     width: 250px;
     height: 200px;
     display: flex;
-    flex-direction: center;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
+    margin: auto;
 
 }
 
-img:hover{
+
+img:hover {
     width: 252px;
     transition: 0.3s;
+
 }
 
-select {
-    display: flex;
+.main {
+    width: 10%;
+    height: 10%;
+    margin: 70px auto 0;
+    padding: 10px 350px;
+    display: grid;
     flex-direction: center;
-    align-items: center;
     justify-content: center;
-    margin: 10px auto;
+    align-items: center;
+    background-color: #E4E4E4;
+    box-shadow: 1px 2px 15px #2E2E40;
+
+
+}
+
+
+select {
+
+    margin: auto;
     border: 3px solid #2E2E40;
     font-weight: 500;
     font-size: 25px;
-
+    border-radius: 10px;
 }
 
 
 #conteiner {
-    padding: 40px 280px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
 
+    padding: 40px 280px;
+    border-radius: 10px;
     display: flex;
     flex-direction: center;
     align-items: center;
     justify-content: center;
-    border-color: #2E2E40
+    box-shadow: 1px 1px 10px #2E2E40;
+
 }
 
 
 section {
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
 
+    display: grid;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
 }
 
 div {
@@ -68,7 +83,65 @@ div {
     margin-left: 10px;
     background-color: #FFFFFF;
     border-radius: 50px;
-    border: 5px solid #E4E4E4;
+    border: 3px solid #E4E4E4;
     padding: 2em;
 
+}
+
+
+/*  */
+
+.btn-help {
+    width: 60px;
+    height: 60px;
+    background: #d22929;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.btn-help:hover {
+    background: #4a08cf;
+    border-radius: 15px;
+    width: 250px;
+    height: 300px;
+
+}
+
+.btn-help i {
+    position: absolute;
+}
+
+.btn-help:hover i {
+    opacity: 0;
+}
+
+.btn-help i {
+    font-size: 30px;
+    color: #000;
+
+}
+
+.text-section {
+    opacity: 0;
+    width: 200px;
+    height: 100px;
+}
+
+.btn-help:hover .text-section {
+    animation: forwards fadeIn 0.7s 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

@@ -19,6 +19,7 @@ option.addEventListener("change", function () {
         divFour.style.background = '#F4F4F4'
         divFive.style.background = '#F4F4F4'
         divSix.style.background = '#F4F4F4'
+        
 
     } else if (option.value == 'first-child') {
         divOne.style.background = '#04BF9D'
